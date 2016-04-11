@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D27A7F301CB74F310068877D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F2F1CB74F310068877D /* main.m */; };
+		D27A7F331CB74F310068877D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F321CB74F310068877D /* AppDelegate.m */; };
+		D27A7F361CB74F310068877D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F351CB74F310068877D /* ViewController.m */; };
+		D27A7F391CB74F310068877D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27A7F371CB74F310068877D /* Main.storyboard */; };
+		D27A7F3C1CB74F310068877D /* BJDatePicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F3A1CB74F310068877D /* BJDatePicker.xcdatamodeld */; };
+		D27A7F3E1CB74F310068877D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27A7F3D1CB74F310068877D /* Assets.xcassets */; };
+		D27A7F411CB74F310068877D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27A7F3F1CB74F310068877D /* LaunchScreen.storyboard */; };
+		D27A7F4C1CB74F310068877D /* BJDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F4B1CB74F310068877D /* BJDatePickerTests.m */; };
+		D27A7F571CB74F310068877D /* BJDatePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F561CB74F310068877D /* BJDatePickerUITests.m */; };
+		D27A7F6D1CB750CA0068877D /* BJDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F6C1CB750CA0068877D /* BJDatePicker.m */; };
+		D27A7F701CB751CE0068877D /* BJDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27A7F6F1CB751CE0068877D /* BJDatePickerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D27A7F481CB74F310068877D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27A7F231CB74F310068877D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27A7F2A1CB74F310068877D;
+			remoteInfo = BJDatePicker;
+		};
+		D27A7F531CB74F310068877D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27A7F231CB74F310068877D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27A7F2A1CB74F310068877D;
+			remoteInfo = BJDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D27A7F2B1CB74F310068877D /* BJDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27A7F2F1CB74F310068877D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D27A7F311CB74F310068877D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D27A7F321CB74F310068877D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D27A7F341CB74F310068877D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D27A7F351CB74F310068877D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D27A7F381CB74F310068877D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D27A7F3B1CB74F310068877D /* BJDatePicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJDatePicker.xcdatamodel; sourceTree = "<group>"; };
+		D27A7F3D1CB74F310068877D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D27A7F401CB74F310068877D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D27A7F421CB74F310068877D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27A7F471CB74F310068877D /* BJDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27A7F4B1CB74F310068877D /* BJDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDatePickerTests.m; sourceTree = "<group>"; };
+		D27A7F4D1CB74F310068877D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27A7F521CB74F310068877D /* BJDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27A7F561CB74F310068877D /* BJDatePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJDatePickerUITests.m; sourceTree = "<group>"; };
+		D27A7F581CB74F310068877D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27A7F6B1CB750CA0068877D /* BJDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDatePicker.h; sourceTree = "<group>"; };
+		D27A7F6C1CB750CA0068877D /* BJDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDatePicker.m; sourceTree = "<group>"; };
+		D27A7F6E1CB751CE0068877D /* BJDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJDatePickerView.h; sourceTree = "<group>"; };
+		D27A7F6F1CB751CE0068877D /* BJDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJDatePickerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D27A7F281CB74F310068877D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F441CB74F310068877D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F4F1CB74F310068877D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D27A7F221CB74F310068877D = {
+			isa = PBXGroup;
+			children = (
+				D27A7F2D1CB74F310068877D /* BJDatePicker */,
+				D27A7F4A1CB74F310068877D /* BJDatePickerTests */,
+				D27A7F551CB74F310068877D /* BJDatePickerUITests */,
+				D27A7F2C1CB74F310068877D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D27A7F2C1CB74F310068877D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F2B1CB74F310068877D /* BJDatePicker.app */,
+				D27A7F471CB74F310068877D /* BJDatePickerTests.xctest */,
+				D27A7F521CB74F310068877D /* BJDatePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D27A7F2D1CB74F310068877D /* BJDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F641CB74F520068877D /* BJDatePicker */,
+				D27A7F311CB74F310068877D /* AppDelegate.h */,
+				D27A7F321CB74F310068877D /* AppDelegate.m */,
+				D27A7F341CB74F310068877D /* ViewController.h */,
+				D27A7F351CB74F310068877D /* ViewController.m */,
+				D27A7F371CB74F310068877D /* Main.storyboard */,
+				D27A7F3D1CB74F310068877D /* Assets.xcassets */,
+				D27A7F3F1CB74F310068877D /* LaunchScreen.storyboard */,
+				D27A7F421CB74F310068877D /* Info.plist */,
+				D27A7F3A1CB74F310068877D /* BJDatePicker.xcdatamodeld */,
+				D27A7F2E1CB74F310068877D /* Supporting Files */,
+			);
+			path = BJDatePicker;
+			sourceTree = "<group>";
+		};
+		D27A7F2E1CB74F310068877D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F2F1CB74F310068877D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D27A7F4A1CB74F310068877D /* BJDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F4B1CB74F310068877D /* BJDatePickerTests.m */,
+				D27A7F4D1CB74F310068877D /* Info.plist */,
+			);
+			path = BJDatePickerTests;
+			sourceTree = "<group>";
+		};
+		D27A7F551CB74F310068877D /* BJDatePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F561CB74F310068877D /* BJDatePickerUITests.m */,
+				D27A7F581CB74F310068877D /* Info.plist */,
+			);
+			path = BJDatePickerUITests;
+			sourceTree = "<group>";
+		};
+		D27A7F641CB74F520068877D /* BJDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				D27A7F6B1CB750CA0068877D /* BJDatePicker.h */,
+				D27A7F6C1CB750CA0068877D /* BJDatePicker.m */,
+				D27A7F6E1CB751CE0068877D /* BJDatePickerView.h */,
+				D27A7F6F1CB751CE0068877D /* BJDatePickerView.m */,
+			);
+			path = BJDatePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D27A7F2A1CB74F310068877D /* BJDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27A7F5B1CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePicker" */;
+			buildPhases = (
+				D27A7F271CB74F310068877D /* Sources */,
+				D27A7F281CB74F310068877D /* Frameworks */,
+				D27A7F291CB74F310068877D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BJDatePicker;
+			productName = BJDatePicker;
+			productReference = D27A7F2B1CB74F310068877D /* BJDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D27A7F461CB74F310068877D /* BJDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27A7F5E1CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePickerTests" */;
+			buildPhases = (
+				D27A7F431CB74F310068877D /* Sources */,
+				D27A7F441CB74F310068877D /* Frameworks */,
+				D27A7F451CB74F310068877D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27A7F491CB74F310068877D /* PBXTargetDependency */,
+			);
+			name = BJDatePickerTests;
+			productName = BJDatePickerTests;
+			productReference = D27A7F471CB74F310068877D /* BJDatePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D27A7F511CB74F310068877D /* BJDatePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27A7F611CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePickerUITests" */;
+			buildPhases = (
+				D27A7F4E1CB74F310068877D /* Sources */,
+				D27A7F4F1CB74F310068877D /* Frameworks */,
+				D27A7F501CB74F310068877D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27A7F541CB74F310068877D /* PBXTargetDependency */,
+			);
+			name = BJDatePickerUITests;
+			productName = BJDatePickerUITests;
+			productReference = D27A7F521CB74F310068877D /* BJDatePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D27A7F231CB74F310068877D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zbj;
+				TargetAttributes = {
+					D27A7F2A1CB74F310068877D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D27A7F461CB74F310068877D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D27A7F2A1CB74F310068877D;
+					};
+					D27A7F511CB74F310068877D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D27A7F2A1CB74F310068877D;
+					};
+				};
+			};
+			buildConfigurationList = D27A7F261CB74F310068877D /* Build configuration list for PBXProject "BJDatePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D27A7F221CB74F310068877D;
+			productRefGroup = D27A7F2C1CB74F310068877D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D27A7F2A1CB74F310068877D /* BJDatePicker */,
+				D27A7F461CB74F310068877D /* BJDatePickerTests */,
+				D27A7F511CB74F310068877D /* BJDatePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D27A7F291CB74F310068877D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27A7F411CB74F310068877D /* LaunchScreen.storyboard in Resources */,
+				D27A7F3E1CB74F310068877D /* Assets.xcassets in Resources */,
+				D27A7F391CB74F310068877D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F451CB74F310068877D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F501CB74F310068877D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D27A7F271CB74F310068877D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27A7F701CB751CE0068877D /* BJDatePickerView.m in Sources */,
+				D27A7F361CB74F310068877D /* ViewController.m in Sources */,
+				D27A7F6D1CB750CA0068877D /* BJDatePicker.m in Sources */,
+				D27A7F3C1CB74F310068877D /* BJDatePicker.xcdatamodeld in Sources */,
+				D27A7F331CB74F310068877D /* AppDelegate.m in Sources */,
+				D27A7F301CB74F310068877D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F431CB74F310068877D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27A7F4C1CB74F310068877D /* BJDatePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27A7F4E1CB74F310068877D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27A7F571CB74F310068877D /* BJDatePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D27A7F491CB74F310068877D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27A7F2A1CB74F310068877D /* BJDatePicker */;
+			targetProxy = D27A7F481CB74F310068877D /* PBXContainerItemProxy */;
+		};
+		D27A7F541CB74F310068877D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27A7F2A1CB74F310068877D /* BJDatePicker */;
+			targetProxy = D27A7F531CB74F310068877D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D27A7F371CB74F310068877D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27A7F381CB74F310068877D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D27A7F3F1CB74F310068877D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27A7F401CB74F310068877D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D27A7F591CB74F310068877D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D27A7F5A1CB74F310068877D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D27A7F5C1CB74F310068877D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BJDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D27A7F5D1CB74F310068877D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BJDatePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D27A7F5F1CB74F310068877D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BJDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJDatePicker.app/BJDatePicker";
+			};
+			name = Debug;
+		};
+		D27A7F601CB74F310068877D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BJDatePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJDatePicker.app/BJDatePicker";
+			};
+			name = Release;
+		};
+		D27A7F621CB74F310068877D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BJDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BJDatePicker;
+			};
+			name = Debug;
+		};
+		D27A7F631CB74F310068877D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BJDatePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcyx.BJDatePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BJDatePicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D27A7F261CB74F310068877D /* Build configuration list for PBXProject "BJDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27A7F591CB74F310068877D /* Debug */,
+				D27A7F5A1CB74F310068877D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27A7F5B1CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27A7F5C1CB74F310068877D /* Debug */,
+				D27A7F5D1CB74F310068877D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27A7F5E1CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27A7F5F1CB74F310068877D /* Debug */,
+				D27A7F601CB74F310068877D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27A7F611CB74F310068877D /* Build configuration list for PBXNativeTarget "BJDatePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27A7F621CB74F310068877D /* Debug */,
+				D27A7F631CB74F310068877D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D27A7F3A1CB74F310068877D /* BJDatePicker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D27A7F3B1CB74F310068877D /* BJDatePicker.xcdatamodel */,
+			);
+			currentVersion = D27A7F3B1CB74F310068877D /* BJDatePicker.xcdatamodel */;
+			path = BJDatePicker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D27A7F231CB74F310068877D /* Project object */;
+}
