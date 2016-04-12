@@ -20,8 +20,8 @@
         _cityPicker=[BJCityPicker cityPicker];
         WS(ws);
         [_cityPicker cityPickerDidSelected:^(NSString *province, NSString *city, NSString *local) {
-            [ws hidden];
             !ws.citySelected?:ws.citySelected(province,city,local);
+              [ws hidden];
         }];
     }
     return _cityPicker;
@@ -46,9 +46,7 @@
     return self;
 }
 -(void)cityPicekrViewDidSelected:(citySelected)citySelected{
-    self.citySelected=^(NSString *province, NSString *city, NSString *local){
-        !citySelected?:citySelected(province,city,local);
-    };
+    self.citySelected=citySelected;
 }
 -(void)show{
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];

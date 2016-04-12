@@ -22,10 +22,9 @@
         _datePicker=[BJDatePicker datePicker];
         WS(ws);
         [_datePicker datePickerDidSelected:^(NSString *date) {
-            [ws hidden];
-            if (ws.dateSelected) {
-                ws.dateSelected(date);
-            }
+         
+            !ws.dateSelected?: ws.dateSelected(date);
+              [ws hidden];
         }];
     }
     return _datePicker;
@@ -54,9 +53,7 @@
     return self;
 }
 -(void)datePickerViewDidSelected:(dateSelected)dateSelected{
-    self.dateSelected=^(NSString*dateStr){
-      !dateSelected?:dateSelected(dateStr);
-    };
+    self.dateSelected=dateSelected;
 }
 -(void)show{
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];

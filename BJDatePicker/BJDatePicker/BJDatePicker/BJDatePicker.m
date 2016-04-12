@@ -80,9 +80,7 @@
 }
 
 -(void)datePickerDidSelected:(dateSelected)dateSelected{
-    self.dateSelected=^(NSString*dateStr){
-        !dateSelected?:dateSelected(dateStr);
-    };
+    self.dateSelected=dateSelected;
 }
 #pragma mark----点击事件-----
 -(void)BtnClicked:(UIButton*)btn{

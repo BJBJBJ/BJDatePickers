@@ -57,7 +57,7 @@
 }
 -(BJCityPicker *)cityPicker{
     if (!_cityPicker) {
-        _cityPicker=[BJCityPicker cityPicker];
+        _cityPicker=[BJCityPicker shareCityPicker];
         WS(ws);
         [_cityPicker cityPickerDidSelected:^(NSString *province, NSString *city, NSString *local) {
             //收键盘

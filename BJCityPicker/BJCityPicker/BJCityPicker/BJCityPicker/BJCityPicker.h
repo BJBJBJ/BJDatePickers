@@ -13,7 +13,6 @@
 //height=226 无遮盖(可替代键盘使用)
 typedef void(^citySelected)(NSString*province,NSString*city,NSString*local);
 @interface BJCityPicker : UIView
-
 /**
  *  单例创建
  */

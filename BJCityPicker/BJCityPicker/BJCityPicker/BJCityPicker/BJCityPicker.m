@@ -173,9 +173,7 @@ static BJCityPicker* instance;
 
 
 -(void)cityPickerDidSelected:(citySelected)citySelected{
-    self.citySelected=^(NSString*province,NSString*city,NSString*local){
-        !citySelected?:citySelected(province,city,local);
-    };
+    self.citySelected=citySelected;
 }
 #pragma mark-----PickeView------
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
