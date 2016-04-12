@@ -9,6 +9,11 @@
 #import "BJDatePickerView.h"
 @interface BJDatePickerView()
 @property(nonatomic,strong)BJDatePicker*datePicker;
+
+/**
+ *  选中回调
+ */
+@property(nonatomic,copy)dateSelected dateSelected;
 @end
 @implementation BJDatePickerView
 
@@ -16,12 +21,12 @@
     if (!_datePicker) {
         _datePicker=[BJDatePicker datePicker];
         WS(ws);
-        _datePicker.dateSelected=^(NSString*dateStr){
+        [_datePicker datePickerDidSelected:^(NSString *date) {
+            [ws hidden];
             if (ws.dateSelected) {
-                ws.dateSelected(dateStr);
-                [ws hidden];
+                ws.dateSelected(date);
             }
-        };
+        }];
     }
     return _datePicker;
 }
@@ -37,24 +42,31 @@
     }
     return instance;
 }
+
 +(instancetype)datePickerView{
     return [[self alloc] init];
 }
 -(instancetype)init{
     if (self=[super init]) {
         [self addSubview:self.datePicker];
+  
     }
     return self;
 }
-
+-(void)datePickerViewDidSelected:(dateSelected)dateSelected{
+    self.dateSelected=^(NSString*dateStr){
+      !dateSelected?:dateSelected(dateStr);
+    };
+}
 -(void)show{
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];
     self.frame=self.superview.bounds;
     [UIView animateWithDuration:0.25f animations:^{
         self.datePicker.frame=CGRectMake(0, KDeviceHeight-226, KDeviceWidth, 226);
     }];
-    
 }
+
+
 -(void)hidden{
     [UIView animateWithDuration:0.25f animations:^{
         self.datePicker.frame=CGRectMake(0, KDeviceHeight, KDeviceWidth, 226);

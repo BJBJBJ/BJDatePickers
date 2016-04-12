@@ -46,26 +46,27 @@
 }
 -(BJDatePickerView *)datePickerView{
     if (!_datePickerView) {
-        WS(ws);
         _datePickerView=[BJDatePickerView shareDatePickerView];
-        _datePickerView.dateSelected=^(NSString*date){
-            //赋值
-            ws.textField.text=date;
-        };
+              WS(ws);
+    [_datePickerView datePickerViewDidSelected:^(NSString *date) {
+        //赋值
+        ws.textField.text=date;
+    }];
+
     }
     return _datePickerView;
 }
 -(BJDatePicker *)datePicker{
     if (!_datePicker) {
-        _datePicker=[BJDatePicker datePicker];
+        _datePicker=[BJDatePicker shareDatePicker];
          WS(ws);
-        _datePicker.dateSelected=^(NSString*date){
-              //赋值
+        [_datePicker datePickerDidSelected:^(NSString *date) {
+            //赋值
             ws.textField.text=date;
             //收键盘
             [ws.textField resignFirstResponder];
-        };
- 
+        }];
+
     }
     return _datePicker;
 }

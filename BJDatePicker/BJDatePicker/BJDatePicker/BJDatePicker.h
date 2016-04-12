@@ -15,10 +15,6 @@
 typedef void(^dateSelected)(NSString*date);
 @interface BJDatePicker : UIView
 /**
- *  选中回调
- */
-@property(nonatomic,copy)dateSelected dateSelected;
-/**
  *  单例创建
  */
 +(BJDatePicker*)shareDatePicker;
@@ -26,4 +22,9 @@ typedef void(^dateSelected)(NSString*date);
  *  实例创建
  */
 +(instancetype)datePicker;
+
+/**
+ *  选中日期回调
+ */
+-(void)datePickerDidSelected:(dateSelected)dateSelected;
 @end

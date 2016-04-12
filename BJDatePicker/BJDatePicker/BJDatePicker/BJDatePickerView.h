@@ -11,10 +11,6 @@
 //有遮盖，添加在window
 @interface BJDatePickerView : UIView
 /**
- *  选中回调
- */
-@property(nonatomic,copy)dateSelected dateSelected;
-/**
  *  单例创建
  */
 +(BJDatePickerView*)shareDatePickerView;
@@ -23,6 +19,12 @@
  */
 +(instancetype)datePickerView;
 /**
+ *  选中日期回调
+ *
+ *  @param dateSelected 回调
+ */
+-(void)datePickerViewDidSelected:(dateSelected)dateSelected;
+/**
  *  展示
  */
 -(void)show;
@@ -30,4 +32,7 @@
  *  移除
  */
 -(void)hidden;
+
+
+
 @end

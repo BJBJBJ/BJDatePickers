@@ -17,6 +17,10 @@
  */
 @property(nonatomic,strong)UIDatePicker*datePicker;
 /**
+ *  选中回调
+ */
+@property(nonatomic,copy)dateSelected dateSelected;
+/**
  *  选中的时间串
  */
 @property(nonatomic,copy)NSString*dateStr;
@@ -73,6 +77,12 @@
         self.frame=CGRectMake(0, KDeviceHeight, KDeviceWidth, 226);
     }
     return self;
+}
+
+-(void)datePickerDidSelected:(dateSelected)dateSelected{
+    self.dateSelected=^(NSString*dateStr){
+        !dateSelected?:dateSelected(dateStr);
+    };
 }
 #pragma mark----点击事件-----
 -(void)BtnClicked:(UIButton*)btn{
