@@ -9,17 +9,20 @@
 #import "BJCityPickerView.h"
 @interface BJCityPickerView()
 @property(nonatomic,strong)BJCityPicker*cityPicker;
+/**
+ *  选中回调
+ */
+@property(nonatomic,copy)citySelected citySelected;
 @end
 @implementation BJCityPickerView
 -(BJCityPicker *)cityPicker{
     if (!_cityPicker) {
         _cityPicker=[BJCityPicker cityPicker];
         WS(ws);
-        _cityPicker.citySelected=^(NSString*province,NSString*city,NSString*local){
-            
-            !ws.citySelected?:ws.citySelected(province,city,local);
+        [_cityPicker cityPickerDidSelected:^(NSString *province, NSString *city, NSString *local) {
             [ws hidden];
-        };
+            !ws.citySelected?:ws.citySelected(province,city,local);
+        }];
     }
     return _cityPicker;
 }
@@ -41,6 +44,11 @@
         [self addSubview:self.cityPicker];
     }
     return self;
+}
+-(void)cityPicekrViewDidSelected:(citySelected)citySelected{
+    self.citySelected=^(NSString *province, NSString *city, NSString *local){
+        !citySelected?:citySelected(province,city,local);
+    };
 }
 -(void)show{
     [[[UIApplication sharedApplication] keyWindow] addSubview:self];

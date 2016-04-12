@@ -13,10 +13,7 @@
 //height=226 无遮盖(可替代键盘使用)
 typedef void(^citySelected)(NSString*province,NSString*city,NSString*local);
 @interface BJCityPicker : UIView
-/**
- *  选中回调
- */
-@property(nonatomic,copy)citySelected citySelected;
+
 /**
  *  单例创建
  */
@@ -29,4 +26,10 @@ typedef void(^citySelected)(NSString*province,NSString*city,NSString*local);
  *  更新城市数据(防止非正常操作导致的崩溃及数据不对应)
  */
 -(void)reloadCityData;
+/**
+ *  城市选中后回调
+ *
+ *  @param citySelected 城市选中回调
+ */
+-(void)cityPickerDidSelected:(citySelected)citySelected;
 @end

@@ -10,10 +10,7 @@
 #import "BJCityPicker.h"
 //有遮盖，添加在window
 @interface BJCityPickerView : UIView
-/**
- *  选中回调
- */
-@property(nonatomic,copy)citySelected citySelected;
+
 /**
  *  单例创建
  */
@@ -22,6 +19,12 @@
  *  实例创建
  */
 +(instancetype)cityPickerView;
+/**
+ *  城市选中后回调
+ *
+ *  @param citySelected 城市选中回调
+ */
+-(void)cityPicekrViewDidSelected:(citySelected)citySelected;
 /**
  *  展示
  */

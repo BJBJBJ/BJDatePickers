@@ -28,7 +28,10 @@
 @property(nonatomic,strong)UIPickerView*pickerView;
 
 
-
+/**
+ *  选中回调
+ */
+@property(nonatomic,copy)citySelected citySelected;
 #pragma mark----数据源----
 /**
  *  省份
@@ -168,6 +171,12 @@ static BJCityPicker* instance;
     !self.citySelected?:self.citySelected(provinceStr,cityStr,localStr);
 }
 
+
+-(void)cityPickerDidSelected:(citySelected)citySelected{
+    self.citySelected=^(NSString*province,NSString*city,NSString*local){
+        !citySelected?:citySelected(province,city,local);
+    };
+}
 #pragma mark-----PickeView------
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 3;

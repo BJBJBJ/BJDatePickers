@@ -47,10 +47,10 @@
     if (!_cityPickerView) {
         WS(ws);
         _cityPickerView=[BJCityPickerView shareCityPickerView];
-        _cityPickerView.citySelected=^(NSString*province,NSString*city,NSString*local){
+        [_cityPickerView cityPicekrViewDidSelected:^(NSString *province, NSString *city, NSString *local) {
             //赋值
             ws.textField.text=[NSString stringWithFormat:@"%@%@%@",province,city,local];
-        };
+        }];
     }
     return _cityPickerView;
 
@@ -59,13 +59,13 @@
     if (!_cityPicker) {
         _cityPicker=[BJCityPicker cityPicker];
         WS(ws);
-        _cityPicker.citySelected=^(NSString*province,NSString*city,NSString*local){
+        [_cityPicker cityPickerDidSelected:^(NSString *province, NSString *city, NSString *local) {
             //收键盘
             [ws.textField resignFirstResponder];
             //赋值
             ws.textField.text=[NSString stringWithFormat:@"%@%@%@",province,city,local];
-        };
-
+        }];
+      
     }
     return _cityPicker;
 }
